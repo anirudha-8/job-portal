@@ -11,6 +11,7 @@ import {
 	SavedJobs,
 	MyJobs,
 } from "./pages/index";
+import { ThemeProvider } from "./components/theme-provider";
 
 // defining routing
 const router = createBrowserRouter([
@@ -51,7 +52,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-	return <RouterProvider router={router} />;
+	return (
+		<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+			<RouterProvider router={router} />
+		</ThemeProvider>
+	);
 }
 
 export default App;
