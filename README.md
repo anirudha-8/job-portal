@@ -43,21 +43,29 @@ Welcome to the **Job Portal Application** built with the **MERN stack**! This pl
 ## 🚀 Tech Stack
 
 - **Frontend**:
+  
   - **React.js**: A powerful JavaScript library for building dynamic and interactive user interfaces.
+  
   - **Tailwind CSS**: A utility-first CSS framework for building sleek, modern designs quickly.
+  
   - **Shadcn UI**: Pre-built, customizable UI components for building beautiful, consistent interfaces.
 
 - **Backend**:
+  
   - **Supabase**: An open-source backend-as-a-service providing **authentication**, **database**, and **file storage**.
 
 - **Authentication**:
+  
   - **Supabase Authentication**: Secure login and signup using email-based authentication.
 
 - **File Storage**:
+  
   - **Supabase Storage**: Upload and manage resumes or documents securely.
 
 - **Hosting**:
+  
   - **Vercel**: For fast, serverless deployment of the frontend.
+  
   - **Supabase**: Hosting for backend services, including **database** and **authentication**.
 
 ---
@@ -67,6 +75,7 @@ Welcome to the **Job Portal Application** built with the **MERN stack**! This pl
 ### 🛠️ Prerequisites
 
 - Node.js (v16 or higher)
+
 - Yarn (recommended)
 
 ### ⚡ Steps to Run Locally
