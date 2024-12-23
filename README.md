@@ -11,22 +11,31 @@ Welcome to the **Job Portal Application** built with the **MERN stack**! This pl
 ## Features ✨
 
 - **🔑 Secure Authentication**:
+  
   - Users can sign up and log in via **email** using **Supabase Authentication**.
+  
   - Job seekers and employers have their own customized profiles.
 
 - **📋 Job Listings**:
+  
   - Employers can post jobs with detailed descriptions, salary, and location.
+  
   - Job seekers can **search** and **filter** through job listings.
 
 - **💼 Apply for Jobs**:
+  
   - Job seekers can upload resumes and cover letters when applying for jobs.
+  
   - Resumes are stored securely in **Supabase Storage**.
 
 - **🔄 Real-time Updates**:
+  
   - Employers can view new applications in real-time.
+  
   - Admin interface to manage users and job posts.
 
 - **📱 Responsive Design**:
+  
   - Fully responsive using **Tailwind CSS**, making it user-friendly on all devices (desktop, tablet, mobile).
 
 ---
