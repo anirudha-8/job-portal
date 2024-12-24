@@ -1,15 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { SignedIn, SignedOut, SignIn, UserButton } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
 import { PenBox } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
 	const [showSignInModal, setShowSignInModal] = useState(false);
+
+	// if user is currently on another route, and NOT signed-in,
+	// then we'll show "sign-in" modal
+	const [search, setSearch] = useSearchParams();
+	useEffect(() => {
+		if (search.get("sign-in")) {
+			setShowSignInModal(true);
+		}
+	}, [search]);
+
 	// to remove the "showSignInModal", if clicked outside of the modal
 	const handleOverlayClick = (e) => {
 		if (e.target === e.currentTarget) {
 			setShowSignInModal(false);
+			setSearch({});
 		}
 	};
 	return (
