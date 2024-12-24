@@ -5,6 +5,7 @@ import {
 	SignInButton,
 	UserButton,
 } from "@clerk/clerk-react";
+import { Button } from "./ui/button";
 
 const Header = () => {
 	return (
@@ -17,13 +18,13 @@ const Header = () => {
 						className="h-14"
 					/>
 				</Link>
-				{/* <Button variant="outline">Login</Button> */}
-				<SignedOut>
+				<Button variant="outline">Login</Button>
+				{/* <SignedOut>
 					<SignInButton />
 				</SignedOut>
 				<SignedIn>
 					<UserButton />
-				</SignedIn>
+				</SignedIn> */}
 			</nav>
 		</>
 	);

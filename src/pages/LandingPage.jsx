@@ -4,9 +4,8 @@ const LandingPage = () => {
 			<section>
 				<h1>Find Your Dream Job</h1>
 			</section>
-			<div>
-				{/* buttons */} {/* carousel */}
-			</div>
+			<div>{/* buttons */}</div>
+			{/* carousel */}
 			{/* banner */}
 			<section>{/* cares */}</section>
 			{/* accordion */}
