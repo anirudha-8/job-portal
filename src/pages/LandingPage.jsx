@@ -11,6 +11,7 @@ import Autoplay from "embla-carousel-autoplay";
 const LandingPage = () => {
 	return (
 		<main className="flex flex-col gap-10 py-10 sm:gap-20 sm:py-20">
+			{/* hero text section */}
 			<section className="text-center">
 				<h1 className="flex flex-col items-center justify-center gradient-title text-4xl font-extrabold sm:text-6xl lg:text-8xl tracking-tighter py-4">
 					Find Your Dream Job <span>and get Hired</span>
@@ -20,6 +21,7 @@ const LandingPage = () => {
 					candidate
 				</p>
 			</section>
+			{/* cta (call to action) buttons section */}
 			<div className="flex gap-6 justify-center">
 				{/* buttons */}
 				<Link to={"/jobs"}>
