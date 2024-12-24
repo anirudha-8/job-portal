@@ -7,6 +7,13 @@ import {
 import { Link } from "react-router-dom";
 import companies from "../data/companies.json";
 import Autoplay from "embla-carousel-autoplay";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 
 const LandingPage = () => {
 	return (
@@ -21,7 +28,7 @@ const LandingPage = () => {
 					candidate
 				</p>
 			</section>
-			{/* cta (call to action) buttons section */}
+			{/* cta (call to action) buttons section 			 */}
 			<div className="flex gap-6 justify-center">
 				{/* buttons */}
 				<Link to={"/jobs"}>
@@ -62,7 +69,8 @@ const LandingPage = () => {
 				</CarouselContent>
 			</Carousel>
 			{/* banner */}
-			<section>{/* cares */}</section>
+			<img src="/public/banner1.png" alt="JobSync banner" />
+
 			{/* accordion */}
 		</main>
 	);
