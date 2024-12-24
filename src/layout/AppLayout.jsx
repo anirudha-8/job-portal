@@ -9,7 +9,7 @@ const AppLayout = () => {
 				<Header />
 				<Outlet />
 			</main>
-			<div className="text-center bg-gray-800 text-[1.2rem] py-6 mt-10">
+			<div className="text-center bg-gray-950 text-sm text-gray-500 py-6 mt-10">
 				&copy;JobSync Pvt. Ltd.
 			</div>
 		</div>
