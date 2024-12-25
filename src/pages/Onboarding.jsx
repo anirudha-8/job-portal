@@ -1,4 +1,4 @@
 const Onboarding = () => {
-	return <div>Onboarding</div>;
+	return;
 };
 export default Onboarding;
