@@ -1,4 +1,5 @@
 import { useUser } from "@clerk/clerk-react";
+import { BarLoader } from "react-spinners";
 
 const Onboarding = () => {
 	const { user, isLoaded } = useUser();
