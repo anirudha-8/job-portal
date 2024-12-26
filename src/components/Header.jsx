@@ -1,11 +1,19 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { SignedIn, SignedOut, SignIn, UserButton } from "@clerk/clerk-react";
+import {
+	SignedIn,
+	SignedOut,
+	SignIn,
+	UserButton,
+	useUser,
+} from "@clerk/clerk-react";
 import { Button } from "./ui/button";
 import { BriefcaseBusiness, Heart, PenBox } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Header = () => {
 	const [showSignInModal, setShowSignInModal] = useState(false);
+
+	const { user } = useUser();
 
 	// if user is currently on another route, and NOT signed-in,
 	// then we'll show "sign-in" modal
@@ -44,15 +52,19 @@ const Header = () => {
 						</Button>
 					</SignedOut>
 					<SignedIn>
-						<Link to={"/post-job"}>
-							<Button
-								variant="destructive"
-								className="rounded-full"
-							>
-								<PenBox size={20} />
-								Post a Job
-							</Button>
-						</Link>
+						{/* logic to show 'post-job' option for 'recruiter' only */}
+						{user?.unsafeMetadata?.role === "recruiter" && (
+							<Link to={"/post-job"}>
+								<Button
+									variant="destructive"
+									className="rounded-full"
+								>
+									<PenBox size={20} />
+									Post a Job
+								</Button>
+							</Link>
+						)}
+
 						{/* user logo button */}
 						<UserButton
 							appearance={{
