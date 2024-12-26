@@ -17,7 +17,6 @@ import ProtectedRoute from "./components/ProtectedRoute";
 // defining routing
 const router = createBrowserRouter([
 	{
-		path: "/",
 		element: <AppLayout />,
 		children: [
 			{
@@ -25,7 +24,7 @@ const router = createBrowserRouter([
 				element: <LandingPage />,
 			},
 			{
-				path: "onboarding",
+				path: "/onboarding",
 				element: (
 					<ProtectedRoute>
 						<Onboarding />
@@ -33,7 +32,7 @@ const router = createBrowserRouter([
 				),
 			},
 			{
-				path: "jobs",
+				path: "/jobs",
 				element: (
 					<ProtectedRoute>
 						<JobListing />
@@ -41,7 +40,7 @@ const router = createBrowserRouter([
 				),
 			},
 			{
-				path: "job/:id",
+				path: "/job/:id",
 				element: (
 					<ProtectedRoute>
 						<JobPage />
@@ -49,7 +48,7 @@ const router = createBrowserRouter([
 				),
 			},
 			{
-				path: "post-job",
+				path: "/post-job",
 				element: (
 					<ProtectedRoute>
 						<PostJob />
@@ -57,7 +56,7 @@ const router = createBrowserRouter([
 				),
 			},
 			{
-				path: "saved-jobs",
+				path: "/saved-jobs",
 				element: (
 					<ProtectedRoute>
 						<SavedJobs />
@@ -65,7 +64,7 @@ const router = createBrowserRouter([
 				),
 			},
 			{
-				path: "my-jobs",
+				path: "/my-jobs",
 				element: (
 					<ProtectedRoute>
 						<MyJobs />

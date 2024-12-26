@@ -17,6 +17,9 @@ const Onboarding = () => {
 			})
 			.then(() => {
 				navigate(role === "recruiter" ? "/post-job" : "/jobs");
+			})
+			.catch((error) => {
+				console.log(`Error updating role: ${error}`);
 			});
 	};
 	useEffect(() => {
